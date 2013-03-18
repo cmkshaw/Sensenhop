@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="sensenhopcs.master.cs"
+    Inherits="sensenhopcs" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat='server'>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Sensenbrenner Hospital</title>
+    <asp:ContentPlaceHolder ID="stylesheets" runat='server'>
+        <link rel="stylesheet" type="text/css" href="App_Themes/CMS/styles.css" />
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="languageBG">
+        <div id="language">
+            <a href="#">Francais</a>
+        </div>
+    </div>
+    <div id="main">
+        <div id="logo">
+            <img src="App_Themes/CMS/Images/logocaro.jpg" alt="logo" />
+        </div>
+        <div id="socialmedia">
+            <asp:Image ID="twittericon" runat="server" ImageUrl="App_Themes/CMS/Images/TwitterIcon_07.jpg" />
+            <asp:Image ID="youtubeicon" runat="server" ImageUrl="App_Themes/CMS/Images/YoutubeIcon_09.jpg" />
+            <asp:Image ID="facebookicon" runat="server" ImageUrl="App_Themes/CMS/Images/FacebookIcon_05.jpg" />
+            <asp:Image ID="linkedinicon" runat="server" ImageUrl="App_Themes/CMS/Images/LinkedInIcon_03.jpg" />
+            <%-- Sunday, March 17, 2013 --%>
+            <asp:Label ID="mstrpagedate" runat="server" />
+            <asp:TextBox ID="txt_search" runat="server" />
+            <asp:Button ID="search_btn" runat="server" Text="Search" />
+        </div>
+        <%--end socialmedia--%>
+        <div id="linkssearch">
+            <a href="#">Volunteers</a> | <a href="#">Careers</a> | <a href="#">Staff/Physician/Professionals</a>
+            | <a href="#">Donations</a>
+        </div>
+        <div id="navLS">
+        </div>
+        <div id="nav">
+           
+   
+                <%--<a href="#">Visiting Sensenbrenner </a>--%>
+
+                <asp:SiteMapDataSource ID="smpd_cms" runat="server" SiteMapProvider="cmscs" ShowStartingNode="false" />
+                <asp:Menu ID="mnu_website" runat="server" DataSourceID="smpd_cms" Orientation="Horizontal"  DynamicMenuItemStyle-ForeColor="Chocolate" DynamicMenuStyle-BackColor="White"></asp:Menu>
+               
+                <%--<li>
+                <asp:SiteMapDataSource ID="smpd_visting" runat="server" SiteMapProvider="visitingmenu" ShowStartingNode="true" />
+                <asp:Menu ID="mnu_visiting" runat="server" DataSourceID="smpd_visting" Orientation="Vertical" >
+              
+                </asp:Menu>
+                </li>
+                <li>
+                 <asp:SiteMapDataSource ID="smpd_programs" runat="server" SiteMapProvider="programsmenu" ShowStartingNode="true" />
+                <asp:Menu ID="mnu_programs" runat="server" DataSourceID="smpd_programs" Orientation="Vertical"></asp:Menu>--%>
+              <%--  <a href="#">Programs & Services </a>--%><%--</li>--%>
+              <%--  <li><a href="#">About SennHosp </a></li>
+                <li><a href="#">Contact Us </a></li>
+                <li><a href="#">NewsRoom </a></li>
+                <li><a href="#">Donations </a></li>--%>
+            
+        </div>
+        <%--end nav--%>
+        <div id="navRS">
+        </div>
+
+        <div id="page">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <%--end page--%>
+    </div>
+    <%--end main--%>
+    <div id="bottomheader">
+        <div id="bottomheaderlinks">
+            | <a href="#">Visiting Sensenbrenner</a> | <a href="#">Programs & Services</a> |
+            <a href="#">About Senhops</a> | <a href="#">Contact Us</a> | <a href="#">Volunteers</a>
+            | <a href="#">Careers</a> | <a href="#">News Room</a> | <a href="#">Staff / Physician
+                / Professionals </a>| <a href="#">Donations</a> |
+        </div>
+    </div>
+    <!--bottomheader-->
+    <div id="fineprintBG">
+        <div id="fineprint">
+            <div id="fine1">
+                Copyright 2012-2013 Sensenbrenner Hospital (SenHosp).<br />
+                All Rights reserved. Web design by Michael Mandarino / Team2
+            </div>
+            <div id="fine2">
+                <a href="#">Privacy</a> | <a href="#">Legal Disclaimer</a> | <a href="#">Sitemap</a>
+            </div>
+            <div id="fine3">
+                Sensenbrenner Hospital<br />
+                101 Progress Crescent, Kapuskasing, ON
+            </div>
+        </div>
+        <%--end fineprint --%>
+    </div>
+    <%--end fineprintBG--%>
+    </form>
+</body>
+</html>

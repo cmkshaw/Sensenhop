@@ -1,0 +1,320 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* - - - - - end reset - - - - - - - */
+
+/* - - - - - LINK reset- - - - - - - */
+
+a
+{
+	text-decoration:none;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+/* - - - - - Main divs begin- - - - - - - */
+
+
+body 
+{
+    background-color:#e5f7fd;
+}
+
+#main
+{
+	margin: 0 auto;
+	width:1200px;
+	height:100%;
+}
+
+/* - - - - - This is the whole strip - - - - - - */
+#language
+{
+	
+	width:1200px;
+	height:25px;
+	margin:0 auto;
+}
+
+#languageBG 
+{
+    width:100%;
+    background-color:#34649e;
+}
+
+/* - - - - - Links - - - - - - */
+
+#language a
+{
+	color:#FFFFFF;
+	float:right;
+	width:100%;
+	text-align:right;
+	margin-right:120px;
+	padding:5px;
+	font-size:16px;
+}
+
+/* - - - - - Main DIVS - - - - - - */
+
+#centralbg
+{
+	background-color:#e5f7fd;
+	width:100%;
+	margin:0 auto;
+	height:100%;
+}
+
+/*-------------------- LOGO AREA -------------------*/
+
+#logo
+{
+width:20%;
+margin-left:120px;
+
+}
+#socialmedia
+{
+	width:800px;
+	float:right;
+	margin-right:-90px;
+	margin-top:-20px;
+	display:block;
+	font-size:.8em;
+
+	
+}
+
+#tweet
+{
+	
+	margin-top:-40px;
+	
+}
+
+
+#linkssearch
+{
+	
+	width:40%;
+	float:right;
+	text-align:right;
+	margin-top:-58px;
+	margin-right:20px;
+	font-size:.8em;
+	
+}
+
+#txt_search
+{
+    margin-left:170px;
+}
+
+#mstrpagedate
+{
+    margin-left:120px;
+}
+
+/*-------------------- NAV bar -------------------*/
+
+#nav
+{
+    background-image:url(http://localhost:49425/Sensenbrenner/App_Themes/CMS/Images/nav_03.png); 
+    background-repeat:repeat-x;
+    
+    margin:10px 0 5px 0; 
+	height:45px;
+	width:1024px;
+    text-align:center;
+    float:left;
+}
+
+#navLS 
+{
+    background-image:url(http://localhost:49425/Sensenbrenner/App_Themes/CMS/Images/navLeft_03.png);
+    height:45px;
+    width:10px;
+    float:left;
+    margin:10px 0 5px 120px;
+}
+
+#navRS 
+{
+    background-image:url(http://localhost:49425/Sensenbrenner/App_Themes/CMS/Images/navRight_06.png);
+    height:45px;
+    width:15px;
+    float:left;
+    margin-top:10px;
+}
+
+#nav ul, li
+{
+	display:inline;
+	height:45px;
+	margin-top:10px;
+	padding:0 20px 0 20px;
+	background-image:url(http://localhost:49877/Sensenbrenner/App_Themes/CMS/Images/navButton_10.png);
+	background-repeat:no-repeat;
+}
+
+
+#nav a
+{
+	display:inline;
+	color:#FFFFFF;
+	font-size:16px;
+	
+}
+
+
+/*-------------------- THIS IS WHERE STUFF GOES -------------------*/
+
+#page /*refers to where the content page stuff is*/
+{
+	margin:0 auto;
+	width:1100px;
+	height:100%;
+	padding-left:120px;
+	background-color:Aqua;
+	
+}
+
+#leftsidepanel
+{
+	float:left;
+}
+
+#centrepanel
+{
+	float:left;
+	margin:10px;
+	
+}
+
+#rightsidepanel
+{
+	float:right;
+	margin-right:50px;
+}
+
+#bottompanel
+{
+	clear:both;
+	
+}
+
+.box
+{
+	width:190px;
+	height:130px;
+	margin-bottom:12px;
+	margin-top:12px;
+}
+.infobox
+{
+	width:405px;
+	height:140px;
+	float:left;
+	padding:10px 10px 20px 0;
+}
+
+/*-------------------- BOTTOM THINGS -------------------*/
+
+#bottomheader 
+{
+	clear:both;
+	background-color:#5c948e;
+	width:100%;
+	height:25px;
+	font-size:.8em;
+	color:#FFFFFF;
+}
+
+#bottomheaderlinks
+{
+	text-align:center;
+	padding:5px;
+}
+
+
+#bottomheader a, #fineprint a
+{
+	color:#FFFFFF;
+}
+
+/*-------------------- Tha fine print-------------------*/
+#fineprint
+{
+	clear:both;
+	width:1200px;
+	height:35px;
+	margin:0 auto;
+	height:auto;
+	color:#FFFFFF;
+	font-size:.6em;
+	padding:10px 0 35px 0;
+}
+
+#fineprintBG 
+{
+    width:100%;
+    background-color:#34649e;
+}
+/*-------------------- Three columns for the "fineprint" div-------------------*/
+#fine1
+{
+	float:left;
+	margin-left:110px;
+	
+}
+
+#fine2
+{
+	width:20%;
+	float:left;
+	text-align:right;
+	font-size:1.2em;
+	
+}
+
+#fine3
+{
+	float:right;
+	text-align:right;
+	margin-right:110px;
+	
+}
+
+
+
+
+

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="admin/linq.aspx" title="Visiting Sensenbrenner"  description="Visiting Sensenbrenner">
+      <siteMapNode url="admin/cmsvisitingcs.aspx" title="Visiting Sensenbrenner"  description="Visiting Sensenbrenner">
+        <siteMapNode url="admin/linq7.aspx" title="How to get here"  description="" />
+        <siteMapNode url="admin/linq8.aspx" title="Our Kitchen"  description="" />
+        </siteMapNode>
+      <siteMapNode url="admin/cmsprogramscs.aspx" title="Programs and Services"  description="Programs and Services">
+        <siteMapNode url="admin/linq11.aspx" title="How to get here"  description="" />
+        <siteMapNode url="admin/linq22.aspx" title="Our Kitchen"  description="" />
+      </siteMapNode>
+        <siteMapNode url="admin/linq3.aspx" title="About SensHop"  description="News room" />
+      <siteMapNode url="admin/linq4.aspx" title="Contact Us"  description="Donations" />
+      <siteMapNode url="admin/linq5.aspx" title="NewsRoom"  description="Contact Us" />
+      <siteMapNode url="admin/linq6.aspx" title="Donations"  description="About Sensenbrenner" />
+    </siteMapNode>
+  
+</siteMap>
